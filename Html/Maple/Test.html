@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript" src="js.js"></script>
+<body>
+  <h1>javaScript</h1>
+  <input type="button" onclick="add('plus')" value="+1"/>
+  <input type="button" onclick="add('minus')" value="-1"/>
+  <script>
+    function add(type){
+      const resultElemet = document.getElementById('Unit_A');
+
+      let A = resultElemet.innerText;
+
+      if(type === 'plus'){
+        A = parseInt(A) + 1;
+      }else if(type === 'minus') {
+        A = parseInt(A) - 1;
+      }
+
+      resultElemet.innerText = A;
+    }
+  </script>
+  <br>히드라 유닛 수
+  <figure id="Unit_A">0</figure>
+  <input type="button" value="dark" onclick="dark()">
+  <input type="button" value="white" onclick="white()">
+  <script>
+    function dark(){
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+    }
+    function white(){
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    }
+  </script>
+</body>
+</html>
