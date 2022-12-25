@@ -6,40 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
+    #title{background-color:powderblue;} 
   </style>
 </head>
-<script type="text/javascript" src="script1.js"></script>
 <body>
-  <div style="background-color: rgb(0, 247, 255);" id="title">
+  <div id="title">
     <h2>메운디 계산 사이트</h2><br>
   </div>
-  <div class="로그인">
-    <p>
-      아이디: &nbsp;&nbsp;&nbsp;<input id="userID" type="text"><br>
-      비밀번호: <input type="password" name="asd" id="">
-    </p>
-  </div>
-    <div class="hydra">
-      <script>
-        function add1(type){
-          const resultElement=document.getElementById('노말히드라');
-          
-          let A = resultElement.innerText;
-
-          if(type === 'plus'){
-            A = parseInt(A) + 1;
-          } else if(type === 'minus'){
-            A = parseInt(A) - 1;}
-
-          resultElement.innerText = A;
-          }
-      </script>
-      <input type="button" value="노말+1" onclick="add1('plus')">
-      <input type="button" value="노말-1" onclick="add1('minus')">
-      <div id="노말히드라">0</div>
-
-
+  <div class="히드라">
+    <div class="노말히드라">노말 히드라<br>
+      <input type="button" value="+1" id="norm_plus">
+      <input type="button" value="-1" id="norm_minus">
+  result= <span id="norm_result">0</span>
+    </div>
+    <div class="레어히드라">레어 히드라<br>
+      <input type="button" value="+1" id="rare_plus">
+      <input type="button" value="-1" id="rare_minus">
+  result= <span id="rare_result">0</span>
+    </div>
   
+  total = <span class="total">0</span>
+
+  <script src="normal_hydra.js"></script>
+  </div>
+
 </body>
 </html>
