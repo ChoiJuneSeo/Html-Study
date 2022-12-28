@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #title{background-color:powderblue;} 
+  </style>
+  <link rel="stylesheet" href="snowflake.css">
 </head>
 <body>
-  <script type="text/javascript" src="Test.js"></script>
-  <div>
-    <h1> 버튼 만들기 </h1>
-      <button onclick="DoAct()"> 버튼 </button>
-      <script>function DoAct() {
-        alert("Hello World");
-      }  </script>
-      <br> 줄 바꾸기
-      <p>
-        문단 나누기 
-         <br> 내용 1
-         <br> 내용 2
-      </p>
-      띄&nbsp;&nbsp;어쓰&nbsp;&nbsp;&nbsp;기
-      </div>
-      
+  <div id="title">
+    <h2>메운디 계산 사이트</h2><br>
+  </div>
+  <div class="히드라">
+    <div class="노말히드라">노말 히드라<br>
+      <input type="button" value="+1" id="norm_plus">
+      <input type="button" value="-1" id="norm_minus">
+  result= <span id="norm_result">0</span>
+    </div>
+    <div class="레어히드라">레어 히드라<br>
+      <input type="button" value="+1" id="rare_plus">
+      <input type="button" value="-1" id="rare_minus">
+  result= <span id="rare_result">0</span>
+    </div>
+  
+  total = <span class="total">0</span>
+
+  <script src="normal_hydra.js"></script>
+  <script src="snow.js"></script>
+  </div>
+
 </body>
 </html>
