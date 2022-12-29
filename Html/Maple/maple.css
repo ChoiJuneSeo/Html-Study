@@ -1,0 +1,56 @@
+@font-face {
+    font-family: font1;
+    src: url(font1.ttf);
+}
+*{
+    font-family: font1;
+    font-size: 40px;
+    text-align: center;
+    
+}
+span{
+    margin: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    
+}
+div{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: rgb(255, 219, 225);
+    display: inline-block;
+    outline: solid;
+    position: relative
+}
+a{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+
+#title{
+    width: 99%;
+    height: 150px;
+    margin: 5px;
+    padding: 10px;
+    outline: solid;
+    background-color: aliceblue;
+    
+}
+
+#none{
+    background-color: white;
+    outline: solid;
+    width: 99%;
+    height: 750px;
+}
+#none2{
+    background-color: white;
+    outline: solid;
+    width: 99%;
+    height: 240px;
+}

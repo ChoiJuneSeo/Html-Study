@@ -5,30 +5,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    #title{background-color:powderblue;} 
-  </style>
+  <style></style>
+  <link rel="stylesheet" href="maple.css">
 </head>
 <body>
   <div id="title">
-    <h2>메운디 계산 사이트</h2><br>
+    <h1>메운디 계산 사이트</h1>
   </div>
-  <div class="히드라">
-    <div class="노말히드라">노말 히드라<br>
-      <input type="button" value="+1" id="norm_plus">
-      <input type="button" value="-1" id="norm_minus">
-  result= <span id="norm_result">0</span>
+  <div id="none">
+    <div class="norm_hy">
+      노말 히드라<br>
+      <a href="#" id="norm_hy_pl">+</a>
+      <span id="num_norm_hy">0</span>
+      <a href="#" id="norm_hy_mi">-</a><br>
     </div>
-    <div class="레어히드라">레어 히드라<br>
-      <input type="button" value="+1" id="rare_plus">
-      <input type="button" value="-1" id="rare_minus">
-  result= <span id="rare_result">0</span>
+    
+    <div class="rare_hy">
+      레어 히드라<br>
+      <a href="#" id="rare_hy_pl">+</a>
+      <span id="num_rare_hy">0</span>
+      <a href="#" id="rare_hy_mi">-</a><br>
+      
+    </div>
+    
+    <div class="anc_hy">
+      고대 히드라<br>
+      <a href="#" id="anc_hy_pl">+</a>
+      <span id="num_anc_hy">0</span>
+      <a href="#" id="anc_hy_mi">-</a><br>
+    </div>
+    
+
+    <div class="relic_hy">
+      유물 히드라<br>
+      <a href="#" id="relic_hy_pl">+</a>
+      <span id="num_relic_hy">0</span>
+      <a href="#" id="relic_hy_mi">-</a>
     </div>
   
-  total = <span class="total">0</span>
+    <div class="epic_hy">
+      서사 히드라<br>
+      <a href="#" id="epic_hy_pl">+</a>
+      <span id="num_epic_hy">0</span>
+      <a href="#" id="epic_hy_mi">-</a>
+    </div>
+    
+    <div class="legend_hy">
+      전설 히드라<br>
+      <a href="#" id="legend_hy_pl">+</a>
+      <span id="num_legend_hy">0</span>
+      <a href="#" id="legend_hy_mi">-</a>
+    </div>
 
-  <script src="normal_hydra.js"></script>
+    <div class="uniq_hy">
+      에픽 히드라<br>
+      <a href="#" id="uniq_hy_pl">+</a>
+      <span id="num_uniq_hy">0</span>
+      <a href="#" id="uniq_hy_mi">-</a>
+    </div>
+  
+    <div class="god_hy">
+      신화 히드라<br>
+      <a href="#" id="god_hy_pl">+</a>
+      <span id="num_god_hy">0</span>
+      <a href="#" id="god_hy_mi">-</a>
+    </div>
+
+    <div class="ult_hy">
+      태초 히드라<br>
+      <a href="#" id="ult_hy_pl">+</a>
+      <span id="num_ult_hy">0</span>
+      <a href="#" id="ult_hy_mi">-</a>
+    </div>
+    <div class="upgrade">
+      업그레이드<br>
+     <a href="#" id="up_hy_pl">+</a>
+     <span class="upgrade_hy">0</span>
+     <a href="#" id="up_hy_mi">-</a>
+    </div>
   </div>
-
+  <div id="none2">
+    <div>
+      업글 수 = <span class="upgrade_hy2">0</span>
+    </div>
+    <div id="number">
+      유닛 수 = <span class="num_all_hy">0</span><br>
+    </div>
+    <div class="attack">
+      공격력 = <span class="attack_hy">0</span>
+    </div>
+    
+  <script src="maple.js"></script>
 </body>
 </html>
