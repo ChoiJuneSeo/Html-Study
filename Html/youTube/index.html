@@ -6,51 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="aside.css">
     <script src="main.js"></script>
 </head>
 <body>
    <header class="header">
-    <input type="image" src="image/로고.png" alt="xx" id="logo">
-    <input type="text" name="search" id="search" placeholder="검색">
+    <div>
+        <input type="image" src="image/나중.png" alt="xx" id="menu">
+        <input type="image" src="image/로고.png" alt="xx" id="logo">
+    </div>
+    
+    <form action="" class="searching_form">
+        <input type="text" name="search" id="search" placeholder="검색">
+        <button type="submit" id="subutton">
+            <input type="image" src="image/따봉.png" class="submit">
+        </button>
+    </form>
+
+    <div>
+        이미지구하기귀찮다.
+    </div>
+    
 </header>
     <nav class="nav">
         <aside class="aside">
-            <div class="위층">
-                <input type="button" value="홈" class="sidebar"><br>
-                <input type="button" value="short" class="sidebar"><br>
-                <input type="button" value="구독" class="sidebar"><br>
-            </div>
-            <div class="중간층">
-                <input type="button" value="보관함" class="sidebar"><br>
-                <input type="button" value="시청 기록" class="sidebar"><br>
-                <input type="button" value="내 동영상" class="sidebar"><br>
-                <input type="button" value="나중에 볼 동영상이건넘치면이렇게될거잖아" class="sidebar"><br>
-                <button class="imagebutton">
-                    <input type="image" src="image/따봉.png" alt="xx" id="따봉">
-                    좋아요 표시한 동영상이거넘치면설마이게이렇게되나
+            <div class="sidebar">
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content">홈</span>
                 </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> short</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 구독</span>
+                </button>
+            </div>
+            <br>
+            <div>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 보관함</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 시청 기록</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 내 동영상</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/나중.png" alt="xx" class="icon">
+                    <span class="button-content"> 나중에 볼 동영상</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 좋아요 표시한 동영상</span>
+                </button>
+            </div>
+            <br>
+            <div>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 인기 급상승</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 음악</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 영화</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 실시간</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 게임</span>
+                </button>
+                <button class="image_button">
+                    <input type="image" src="image/따봉.png" alt="xx" class="icon">
+                    <span class="button-content"> 스포츠</span>
+                </button>
+
             </div>
         </aside>
         <main class="main">
-            <section class="section">
-                <input type="button" value="버튼1" class="button">
-                <input type="button" value="버튼2" class="button">
-                <input type="button" value="버튼3" class="button">
-                <input type="button" value="버튼4" class="button">
-                <input type="button" value="버튼5" class="button">
+            <section class="section0">
+                <input type="button" value="전체" class="button">
+                <input type="button" value="게임" class="button">
+                <input type="button" value="믹스" class="button">
+                <input type="button" value="음악" class="button">
+                <input type="button" value="실시간" class="button">
             </section>
             <section class="section">
-                section1
-                <article class="article">article1</article>
-                <article class="article">article2</article>
-                <article class="article">article3</article>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
             </section>
+
             <section class="section">
-                section2
-                <article class="article">article1</article>
-                <article class="article">article2</article>
-                <article class="article">article3</article>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
             </section>
+
+            <section class="section">
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+                <div class="article">
+                    <div class="video">이것은 비디오 썸네일 입니다.</div>
+                    <div class="info">이것은 비디오 제목 입니다.</div>
+                </div>
+            </section>
+
         </main>
         
         

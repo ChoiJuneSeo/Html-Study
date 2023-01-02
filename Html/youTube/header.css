@@ -1,0 +1,49 @@
+
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    align-items: center;
+    height: 56px;
+    
+}
+#logo{
+    width: 90px;
+    height: 20px;
+    outline: none;
+    padding: 18px 14px 18px 16px;
+   
+}
+
+#menu{
+    height: 30px;
+    width: 30px;
+    padding: 8px 8px 8px 8px;
+    min-height: auto;
+    min-width: auto;
+    outline: none;
+}
+.searching_form{
+    height: 40px;
+    width: 728px;
+    display: flex;
+    outline: none;
+    
+}
+#search{
+    width: 519px;
+    height: 33px;
+    outline: none;
+    
+}
+.submit{
+    width: 24px;
+    height: 24px;
+    outline: none;
+}
+#subutton{
+    height: 33px;
+    width: 64px;
+    outline: none;
+}
