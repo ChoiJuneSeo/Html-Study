@@ -35,6 +35,9 @@
     width: 519px;
     height: 33px;
     outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: solid 1px;
     
 }
 .submit{
@@ -46,4 +49,8 @@
     height: 33px;
     width: 64px;
     outline: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid 1px;
+    border-left: 0px;
 }

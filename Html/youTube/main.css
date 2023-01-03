@@ -1,7 +1,6 @@
 *{
     position: relative;
     box-sizing: content-box;
-    outline: solid 1px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none solid rgb(15, 15, 15);
@@ -12,7 +11,6 @@
 
 .nav{
     padding: 8px 16px 0 1px;
-    outline-color: red;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -21,7 +19,7 @@
 
 .main{
     width: 88%;
-    outline: solid 1px coral;
+    outline: none;
     overflow: hidden;
     
 }
@@ -31,24 +29,36 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    outline: solid 1px green;
+    outline: none;
     align-content: center;
 }
+
 .article{
-    outline: solid 1px orange;
+    outline: none;
     width: 20%;
     height: 90%;
     display: flex;
     flex-direction: column;
 }
+.article:hover{
+    outline: solid 1px;
+}
 .video{
     width: auto;
     height: 70%;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+}
+.video:hover{
     outline: solid rgb(106, 255, 47) 1px;
 }
 .info{
     width: auto;
     height: 30%;
+}
+.info:hover{
+    outline: solid 1px red;
 }
 .section0{
     height: 40px;
@@ -59,28 +69,34 @@
 
 }
 .button{
-    height: 24px;
+    height: 32px;
     outline: none;
     background: #E5E5E5;
-
+    border: none;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 .button:hover{
-    height: 24px;
+    height: 32px;
     outline: none;
-    background: #ffffa8;
+    background: #d6d6d6;
     transition: 0.25s;
     cursor: pointer;
 
 }
 .button:active{
-    height: 24px;
+    height: 32px;
     outline: none;
-    background: #cabf45;
+    background: #bbbbbb;
     color: black;
-    transform: scale(1.1);
-    transition: 0.25s;
+    transform: scale(1.05);
+    transition: 0.01s;
 
 
 }
-
-
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
